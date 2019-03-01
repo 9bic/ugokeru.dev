@@ -10,6 +10,7 @@
     <style>
     .char {
       max-height: 450px;
+      animation: debu .2s  infinite;
     }
     .columns {
       padding: 1em;
@@ -17,6 +18,13 @@
     .column {
       text-align: center;
     }
+    @keyframes debu {
+    0% {transform: translate(0%, 0%) rotateZ(0deg)}
+    25% {transform: translate(2%, 2%) rotateZ(1deg)}
+    50% {transform: translate(0%, 2%) rotateZ(0deg)}
+    75% {transform: translate(2%, 0%) rotateZ(-1deg)}
+    100% {transform: translate(0%, 0%) rotateZ(0deg)}
+}
     </style>
   </head>
   <body>
